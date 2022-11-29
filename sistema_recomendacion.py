@@ -23,7 +23,7 @@ lista_videojuegos = load_modelA()
 def main():
     df = pd.read_csv('base_original.csv', encoding="utf-8")
     df2 = pd.read_csv('base_actualizada.csv', encoding="utf-8")
-    st.text("por favor mire la lista de usuarios ya creados abajo , evite ingresar nombres que ya estan o repetir nombres , de lo contrario la aplicacion tendra comportamientos inesperados")
+
     st.title("Ingresar usuario")
     options = st.multiselect(
         'Seleccione los juegos que ha jugado',
@@ -33,7 +33,7 @@ def main():
     st.write('You selected:', options)
     indice = []
     variable = []
-
+    st.text( "por favor mire la lista de usuarios ya creados abajo , evite ingresar nombres que ya estan o repetir nombres , de lo contrario la aplicacion tendra comportamientos inesperados")
     Nombre = st.text_input("Ingrese su Nombre")
 
 
