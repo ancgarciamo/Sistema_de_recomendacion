@@ -45,13 +45,24 @@ Usuario1=["Usuario1"]
 Usuario2=["Usuario2"]
 Usuario3=["Usuario3"]
 Usuario4=["Usuario4"]
-
+Usuario5=["Usuario5"]
+Usuario6=["Usuario6"]
+Usuario7=["Usuario7"]
+Usuario8=["Usuario8"]
+Usuario9=["Usuario9"]
+Usuario10=["Usuario10"]
 n=len(lista_videojuegos)-1
 for i in range(n):
     Usuario1.append(random.randint(0,10))
     Usuario2.append(random.randint(0, 10))
     Usuario3.append(random.randint(0, 10))
     Usuario4.append(random.randint(0, 10))
+    Usuario5.append(random.randint(0, 10))
+    Usuario6.append(random.randint(0, 10))
+    Usuario7.append(random.randint(0, 10))
+    Usuario8.append(random.randint(0, 10))
+    Usuario9.append(random.randint(0, 10))
+    Usuario10.append(random.randint(0, 10))
 
 
 print(lista_videojuegos)
@@ -60,9 +71,14 @@ print(len(Usuario1))
 print(len(Usuario2))
 print(len(Usuario3))
 print(len(Usuario4))
-
+print(len(Usuario5))
+print(len(Usuario6))
+print(len(Usuario7))
+print(len(Usuario8))
+print(len(Usuario9))
+print(len(Usuario10))
 lista_def1=lista_videojuegos[1:]
-lista_def=[Usuario1,Usuario2,Usuario3,Usuario4]
+lista_def=[Usuario1,Usuario2,Usuario3,Usuario4,Usuario5,Usuario6,Usuario7,Usuario8,Usuario9,Usuario10]
 print(lista_def)
 with open('base_original_random.csv', 'w', encoding="utf-8") as file:
     writer = csv.writer(file)
